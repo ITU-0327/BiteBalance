@@ -3,3 +3,11 @@
 # Manually managing azure-functions-worker may cause unexpected issues
 
 azure-functions
+openai
+azure-identity
+azure-keyvault-secrets
+azure-cosmos
+azure-search-documents
+azure-ai-textanalytics
+azure-core
+selenium
