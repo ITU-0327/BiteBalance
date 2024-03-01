@@ -5,37 +5,49 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
 
-def fetch_first_product_link(url):
-    # options = Options()
-    # options.add_argument("--headless")
- 
-    # driver = webdriver.Edge(options=options)
+def fetch_first_product_details(search_term: str) -> dict[int, str, str]:
     driver = webdriver.Edge()
+    url = f'https://www.woolworths.com.au/shop/search/products?searchTerm={search_term}'
     driver.get(url)
 
-    first_product_link = None
+    product_info = {}
     try:
         # Wait for the 'wc-product-tile' elements to be loaded on the page.
         WebDriverWait(driver, 10).until(
             EC.presence_of_element_located((By.TAG_NAME, "wc-product-tile"))
         )
-        # Execute JavaScript to extract the href attribute from the <a> tag within the shadow DOM of the first wc-product-tile.
-        first_product_link = driver.execute_script("""
+
+        # Execute JavaScript to extract product title, cost, and URL
+        product_details_script = """
             const productTile = document.querySelector('wc-product-tile');
             const shadowRoot = productTile.shadowRoot;
+
+            // Extract product title
+            const titleElement = shadowRoot.querySelector('.title a');
+            const title = titleElement ? titleElement.textContent.trim() : '';
+
+            // Extract product cost
+            const costElement = shadowRoot.querySelector('.product-tile-price .primary');
+            const costText = costElement ? costElement.textContent.trim() : '';
+            let cost = costText.startsWith('$') ? parseFloat(costText.substring(1)) : 0;
+
+            // Extract product URL
             const linkElement = shadowRoot.querySelector('a');
-            return linkElement ? linkElement.getAttribute('href') : 'Link not found';
-        """)
+            let url = linkElement ? linkElement.getAttribute('href') : '';
+            url = url ? `https://www.woolworths.com.au${url}` : '';
+        
+            return {title, cost, url};
+        """
+        product_info = driver.execute_script(product_details_script)
+
     except Exception as e:
         print(f"An error occurred: {e}")
     finally:
         driver.quit()
 
-    return first_product_link
+    return product_info
 
 
 if __name__ == '__main__':
-    search = 'coke'
-    url = f'https://www.woolworths.com.au/shop/search/products?searchTerm={search}'
-    first_link = fetch_first_product_link(url)
-    print(f"https://www.woolworths.com.au{first_link}")
+    prod_details = fetch_first_product_details('coke')
+    print(prod_details)
