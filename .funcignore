@@ -6,5 +6,5 @@ __queuestorage__
 local.settings.json
 test
 .venv
-
-/Woolies_Scraping
+Woolies_Scraping/
+mobile-web-app/

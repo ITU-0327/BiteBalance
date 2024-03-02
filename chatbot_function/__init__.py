@@ -31,9 +31,6 @@ def main(req: func.HttpRequest) -> func.HttpResponse:
         user_input = req.params.get('query')
         image_content = None
 
-    # with open('C:/Users/itung/Downloads/image_base64.txt', 'r') as file:
-    #     image_content = file.read()
-
     input_language = None
 
     if user_input:
