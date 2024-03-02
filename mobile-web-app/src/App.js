@@ -7,6 +7,10 @@ import {
 } from "react-router-dom";
 import CameraScan1 from './pages/CameraScan1';
 import HomePage from "./pages/HomePage";
+import FrontPage from "./pages/FrontPage";
+import LoginPage from "./pages/LoginPage";
+import SettingsPage from "./pages/SettingsPage";
+import ShoppingList from "./pages/ShoppingList";
 
 function App() {
   const action = useNavigationType();
@@ -28,6 +32,26 @@ function App() {
         title = "";
         metaDescription = "";
         break;
+      case "/login-page":
+        title = "";
+        metaDescription = "";
+        break;
+      case "/home-page":
+        title = "";
+        metaDescription = "";
+        break;
+      case "/scan-your-pantry":
+        title = "";
+        metaDescription = "";
+        break;
+      case "/settings-page":
+        title = "";
+        metaDescription = "";
+        break;
+      case "/shopping-list":
+        title = "";
+        metaDescription = "";
+        break;
     }
 
     if (title) {
@@ -46,9 +70,14 @@ function App() {
 
   return (
     <Routes>
-        <Route path="/" element={<HomePage />} /> // Your new home page
-        <Route path="/scan-your-pantry" element={<CameraScan1 />} /> // CameraScan1 page
-      </Routes>
+      <Route path="/" element={<FrontPage />} />
+      <Route path="/login-page" element={<LoginPage />} />
+      <Route path="/home-page" element={<HomePage />} />
+      <Route path="/scan-your-pantry" element={<CameraScan1 />} />
+      <Route path="/settings-page" element={<SettingsPage />} />
+      <Route path="/shopping-list" element={<ShoppingList />} />
+    </Routes>
+    
   );
 }
 export default App;

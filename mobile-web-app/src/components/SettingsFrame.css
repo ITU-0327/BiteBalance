@@ -14,7 +14,7 @@
   text-align: center;
   z-index: 1;
 }
-.recommended-text1 {
+.recommended-for-you-parent {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
@@ -30,14 +30,14 @@
   object-fit: cover;
   mix-blend-mode: normal;
 }
-.blank-line4,
+.blank-line5,
 .p9 {
   margin: 0;
 }
 .healthy3 {
   font-family: var(--font-source-sans-pro);
 }
-.blank-line5,
+.blank-line6,
 .healthy2,
 .meals-in-10-mins1 {
   margin: 0;
@@ -67,8 +67,8 @@
   min-height: 200px;
   max-height: 200px;
 }
-.blank-line6,
-.blank-line7 {
+.blank-line7,
+.blank-line8 {
   margin: 0;
 }
 .tiktok-recipies1 {
@@ -86,7 +86,7 @@
   display: flex;
   align-items: center;
 }
-.cheap-and-easy-tiktok-recipes {
+.cheap-and-easy-tiktok-recipies-wrapper {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -110,20 +110,20 @@
   max-height: 200px;
   font-size: var(--font-size-lg);
 }
-.micro-wave,
-.recommended-text-parent {
+.frame-parent1,
+.microwave-parent {
   align-self: stretch;
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
 }
-.micro-wave {
+.microwave-parent {
   flex-direction: row;
   gap: 0 17px;
   text-align: center;
   font-size: var(--font-size-xl);
 }
-.recommended-text-parent {
+.frame-parent1 {
   flex-direction: column;
   gap: 14px 0;
 }
@@ -158,7 +158,7 @@
   padding: 0 var(--padding-10xs);
 }
 .chatbot-frame,
-.settings-frame {
+.chatbot-frame-wrapper {
   display: flex;
   justify-content: flex-start;
   max-width: 100%;
@@ -169,7 +169,7 @@
   align-items: flex-end;
   gap: 20px 0;
 }
-.settings-frame {
+.chatbot-frame-wrapper {
   align-self: stretch;
   flex-direction: row;
   align-items: flex-start;
@@ -184,7 +184,7 @@
   .tiktok-recipes1 {
     width: 100%;
   }
-  .micro-wave {
+  .microwave-parent {
     flex-wrap: wrap;
   }
 }

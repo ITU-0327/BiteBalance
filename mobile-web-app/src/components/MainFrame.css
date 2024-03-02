@@ -136,7 +136,7 @@
 }
 .f-r-a-m-e-a,
 .frames-container,
-.main-frame1 {
+.main-frame2 {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
@@ -155,7 +155,7 @@
   color: var(--color-darkslategray);
 }
 .f-r-a-m-e-a,
-.main-frame1 {
+.main-frame2 {
   max-width: 100%;
 }
 .f-r-a-m-e-a {
@@ -163,7 +163,7 @@
   flex-direction: column;
   gap: 23px 0;
 }
-.main-frame1 {
+.main-frame2 {
   align-self: stretch;
   flex-direction: row;
   padding: 0 var(--padding-mini) var(--padding-2xl) 0;

@@ -1,0 +1,66 @@
+.image-10-icon {
+  align-self: stretch;
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  object-fit: cover;
+}
+.bitebalance,
+.blank-line {
+  margin: 0;
+}
+.balanced-living-bite {
+  margin: 0;
+  font-size: var(--font-size-xl);
+}
+.bitebalance-balanced-living-container {
+  height: 104px;
+  position: relative;
+  display: inline-block;
+}
+.image-24-icon {
+  position: absolute;
+  top: 22px;
+  left: 16px;
+  width: 43px;
+  height: 31px;
+  object-fit: cover;
+  z-index: 1;
+}
+.background-image {
+  height: 75px;
+  width: 75px;
+  position: relative;
+  border-radius: var(--br-71xl);
+  background-color: var(--color-gainsboro);
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.background-image-wrapper {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.front-page {
+  width: 100%;
+  position: relative;
+  background-color: var(--color-white);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 199px var(--padding-xl) var(--padding-34xl);
+  box-sizing: border-box;
+  gap: 73px 0;
+  text-align: center;
+  font-size: var(--font-size-14xl);
+  color: var(--color-black);
+  font-family: var(--font-source-sans-pro);
+}

@@ -2,7 +2,7 @@ import "./MainFrame.css";
 
 const MainFrame = () => {
   return (
-    <section className="main-frame1">
+    <section className="main-frame2">
       <div className="f-r-a-m-e-a">
         <div className="hey-tony-settings1">
           <div className="header1">

@@ -1,0 +1,117 @@
+.eggs-1-dozen {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  padding-left: var(--padding-12xl);
+}
+.eggs-1-dozen-container {
+  width: 182px;
+  position: relative;
+  display: inline-block;
+  z-index: 1;
+}
+.onion-1-kg {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  padding-left: var(--padding-12xl);
+}
+.onion-1-kg-container {
+  width: 160px;
+  position: relative;
+  display: inline-block;
+  z-index: 1;
+}
+.potatoes-1-kg {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  padding-left: var(--padding-12xl);
+}
+.potatoes-1-kg-container {
+  width: 186px;
+  position: relative;
+  display: inline-block;
+  z-index: 1;
+}
+.tomatoes-4-pieces {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  padding-left: var(--padding-12xl);
+}
+.tomatoes-4-pieces-container {
+  width: 230px;
+  position: relative;
+  display: inline-block;
+  z-index: 1;
+}
+.wraps-1-packet {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  padding-left: var(--padding-12xl);
+}
+.wraps-1-packet-container {
+  width: 203px;
+  position: relative;
+  display: inline-block;
+  z-index: 1;
+}
+.bacon-250g1 {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  padding-left: var(--padding-12xl);
+}
+.bacon-250g {
+  width: 169px;
+  position: relative;
+  display: inline-block;
+  z-index: 1;
+}
+.carrots-500g1 {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  padding-left: var(--padding-12xl);
+}
+.carrots-500g {
+  width: 179px;
+  position: relative;
+  display: inline-block;
+  z-index: 1;
+}
+.carrots-label {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 13px 0;
+}
+.frame-add-ons {
+  align-self: stretch;
+  gap: 19px 0;
+}
+.food-item-list,
+.frame-add-ons,
+.frame-empty {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.frame-empty {
+  width: 218px;
+  gap: 16px 0;
+}
+.food-item-list {
+  margin: 0;
+  flex: 1;
+  gap: 19px 0;
+  text-align: left;
+  font-size: var(--font-size-4xl);
+  color: var(--color-black);
+  font-family: var(--font-source-sans-pro);
+}

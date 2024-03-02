@@ -1,0 +1,16 @@
+.dropdown-menu1 {
+  height: 32px;
+  flex: 1;
+  font-family: var(--font-source-sans-pro);
+  font-weight: 700;
+  font-size: var(--font-size-5xl);
+  color: var(--color-black);
+}
+.dropdown-menu {
+  align-self: stretch;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}

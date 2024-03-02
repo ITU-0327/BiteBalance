@@ -1,0 +1,50 @@
+.diet {
+  position: relative;
+}
+.dietary-requirements {
+  text-decoration: none;
+  align-self: stretch;
+  border-radius: var(--br-mini);
+  background-color: var(--color-darkgray);
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-5xs);
+  text-align: left;
+  font-size: var(--font-size-4xl);
+  color: inherit;
+}
+.allergies {
+  position: relative;
+}
+.allergies-my-preferences {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 var(--padding-lg);
+}
+.my-preferences {
+  position: relative;
+}
+.allergies-my-preferences1,
+.dropdown-menu-frame {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.allergies-my-preferences1 {
+  flex-direction: row;
+  padding: 0 var(--padding-sm);
+}
+.dropdown-menu-frame {
+  align-self: stretch;
+  flex-direction: column;
+  gap: 12px 0;
+  text-align: center;
+  font-size: var(--font-size-5xl);
+  color: var(--color-black);
+  font-family: var(--font-source-sans-pro);
+}

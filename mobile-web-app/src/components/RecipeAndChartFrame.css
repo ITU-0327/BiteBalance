@@ -18,7 +18,7 @@
 .camera1 {
   position: relative;
 }
-.camera-text-frame {
+.camera-container {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
@@ -43,18 +43,23 @@
   box-sizing: border-box;
   min-width: 75px;
 }
-.chart-btn-icon1 {
+.chart-btn {
+  cursor: pointer;
+  text-decoration: none;
   width: 100px;
   height: 100px;
   position: relative;
   border-radius: var(--br-71xl);
-  object-fit: cover;
+  background-image: url(/public/chart-btn@3x.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
 }
 .list1,
 .shopping1 {
   margin: 0;
 }
-.shopping-list1 {
+.shopping-list3 {
   position: relative;
 }
 .chef-image,
@@ -85,6 +90,7 @@
   object-fit: cover;
 }
 .recipe-btn1 {
+  text-decoration: none;
   width: 100px;
   height: 100px;
   border-radius: var(--br-71xl);

@@ -1,0 +1,76 @@
+.my-bitebalance-profile {
+  position: relative;
+}
+.my-bite-profile {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: 0 var(--padding-34xl) 0 var(--padding-62xl);
+}
+.details-frame {
+  position: absolute;
+  top: 0;
+  left: 137px;
+  border-radius: var(--br-mini);
+  background-color: var(--color-darkgray);
+  width: 123px;
+  height: 104px;
+  overflow: hidden;
+}
+.edit-my-profile {
+  position: absolute;
+  top: 99px;
+  left: 0;
+  text-decoration: underline;
+  font-weight: 600;
+}
+.edit-frame {
+  height: 119px;
+  flex: 1;
+  position: relative;
+}
+.header-frame {
+  width: 278px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 var(--padding-4xs);
+  box-sizing: border-box;
+  font-size: var(--font-size-base);
+  color: var(--color-black);
+}
+.personal-details {
+  position: relative;
+  font-size: var(--font-size-4xl);
+  font-family: var(--font-source-sans-pro);
+  color: var(--color-black);
+  text-align: left;
+}
+.personal-details-frame {
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-5xs);
+  background-color: var(--color-darkgray);
+  align-self: stretch;
+  border-radius: var(--br-mini);
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.my-bite-profile-parent {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 6px 0;
+  text-align: center;
+  font-size: var(--font-size-5xl);
+  color: var(--color-darkslategray);
+  font-family: var(--font-source-sans-pro);
+}

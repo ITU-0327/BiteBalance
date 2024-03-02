@@ -1,0 +1,124 @@
+.create-your-bitebalance {
+  width: 314px;
+  position: absolute;
+  margin: 0 !important;
+  top: 15px;
+  left: 16px;
+  font-size: var(--font-size-3xl);
+  display: inline-block;
+  color: var(--color-black);
+}
+.name1 {
+  margin: 0;
+  white-space: pre-wrap;
+}
+.name- {
+  height: 60px;
+  position: absolute;
+  margin: 0 !important;
+  top: 136px;
+  left: 16px;
+  display: inline-block;
+}
+.age1 {
+  margin: 0;
+  white-space: pre-wrap;
+}
+.age- {
+  height: 60px;
+  position: absolute;
+  margin: 0 !important;
+  top: 205px;
+  left: 16px;
+  display: inline-block;
+}
+.email1 {
+  margin: 0;
+  white-space: pre-wrap;
+}
+.email- {
+  height: 60px;
+  position: absolute;
+  margin: 0 !important;
+  top: 274px;
+  left: 16px;
+  display: inline-block;
+}
+.gender1 {
+  margin: 0;
+  white-space: pre-wrap;
+}
+.gender- {
+  height: 60px;
+  position: absolute;
+  margin: 0 !important;
+  top: 343px;
+  left: 16px;
+  display: inline-block;
+}
+.password {
+  margin: 0;
+  white-space: pre-wrap;
+}
+.password- {
+  height: 60px;
+  position: absolute;
+  margin: 0 !important;
+  top: 412px;
+  left: 16px;
+  display: inline-block;
+}
+.create-your-account {
+  position: relative;
+}
+.form-terms {
+  text-decoration: none;
+  width: 314px;
+  margin: 0 !important;
+  position: absolute;
+  top: 481px;
+  left: 16px;
+  border-radius: var(--br-mini);
+  background-color: var(--color-black);
+  overflow: hidden;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-smi);
+  box-sizing: border-box;
+  color: var(--color-darkgray);
+}
+.terms-and-conditions {
+  text-decoration: underline;
+  font-weight: 700;
+}
+.creating-an-account-container {
+  width: 305px;
+  position: absolute;
+  margin: 0 !important;
+  top: 546px;
+  left: 16px;
+  font-size: var(--font-size-base);
+  color: var(--color-black);
+  display: inline-block;
+}
+.title-bite-balance {
+  width: 350px;
+  height: 601px;
+  border-radius: var(--br-mini);
+  background-color: var(--color-darkgray);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+  padding: var(--padding-mini) var(--padding-base);
+  box-sizing: border-box;
+  position: relative;
+  text-align: center;
+  font-size: var(--font-size-5xl);
+  color: var(--color-darkslategray);
+  font-family: var(--font-source-sans-pro);
+}

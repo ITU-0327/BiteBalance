@@ -19,12 +19,14 @@ const FrameComponent3 = ({ files, onDelete }) => {
           ))}
           </div>
         </div>
-        <img
+        <a href="/home-page">
+          <img
           className="image-12-icon1"
           loading="lazy"
           alt="Background"
           src="/image-12@2x.png"
-        />
+          />
+        </a>
       </div>
     </section>
   );

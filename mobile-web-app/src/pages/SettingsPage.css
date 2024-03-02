@@ -1,0 +1,39 @@
+.image-11 {
+  text-decoration: none;
+  width: 88px;
+  height: 82px;
+  position: absolute;
+  margin: 0 !important;
+  bottom: 12px;
+  left: calc(50% - 44px);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+.allergies-preferences-frame,
+.frame-container,
+.settings-page {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.allergies-preferences-frame {
+  flex-direction: row;
+  padding: 0 var(--padding-4xs) var(--padding-5xs);
+}
+.frame-container,
+.settings-page {
+  flex-direction: column;
+}
+.frame-container {
+  align-self: stretch;
+  gap: 14px 0;
+}
+.settings-page {
+  width: 100%;
+  position: relative;
+  background-color: var(--color-white);
+  overflow: hidden;
+  padding: 72px 44px 207px var(--padding-sm);
+  box-sizing: border-box;
+}

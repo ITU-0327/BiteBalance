@@ -10,34 +10,29 @@ const RecipeAndChartFrame = () => {
             <Link className="camera-btn1" to="/scan-your-pantry">
               <img className="image-4-icon1" alt="" src="/image-4@2x.png" />
             </Link>
-            <div className="camera-text-frame">
+            <div className="camera-container">
               <b className="camera1">Camera</b>
             </div>
           </div>
         </div>
         <div className="shopping-list-frame1">
           <div className="chef-image">
-            <img
-              className="chart-btn-icon1"
-              loading="lazy"
-              alt=""
-              src="/chart-btn@3x.png"
-            />
-            <b className="shopping-list1">
+            <Link className="chart-btn" to="/shopping-list" />
+            <b className="shopping-list3">
               <p className="shopping1">Shopping</p>
               <p className="list1">List</p>
             </b>
           </div>
         </div>
         <div className="shopping-list-frame2">
-          <div className="recipe-btn1">
+          <a className="recipe-btn1">
             <img
               className="image-5-icon1"
               loading="lazy"
               alt=""
               src="/image-5@2x.png"
             />
-          </div>
+          </a>
           <b className="recipes1">Recipes</b>
         </div>
       </div>
