@@ -1,0 +1,78 @@
+diet_options = [
+    'Balanced', 
+    'High-Fibre', 
+    'Low-Carb', 
+    'Keto', 
+    'Vegetarian', 
+    'Vegan', 
+    'Paleo', 
+    'Gluten-Free', 
+    'Dairy-Free'
+]
+
+health_options = [
+    "alcohol-cocktail",
+    "alcohol-free",
+    "celery-free",
+    "crustacean-free",
+    "dairy-free",
+    "DASH",
+    "egg-free",
+    "fish-free",
+    "fodmap-free",
+    "gluten-free",
+    "immuno-supportive",
+    "keto-friendly",
+    "kidney-friendly",
+    "kosher",
+    "low-fat-abs",
+    "low-potassium",
+    "low-sugar",
+    "lupine-free",
+    "Mediterranean",
+    "mollusk-free",
+    "mustard-free",
+    "no-oil-added",
+    "paleo",
+    "peanut-free",
+    "pescatarian",
+    "pork-free",
+    "red-meat-free",
+    "sesame-free",
+    "shellfish-free",
+    "soy-free",
+    "sugar-conscious",
+    "sulfite-free",
+    "tree-nut-free",
+    "vegan",
+    "vegetarian",
+    "wheat-free"
+]
+
+
+meal_types = [
+    "Breakfast",
+    "Dinner",
+    "Lunch",
+    "Snack",
+    "Teatime"
+]
+
+dish_types = [
+    "Biscuits and cookies",
+    "Bread",
+    "Cereals",
+    "Condiments and sauces",
+    "Desserts",
+    "Drinks",
+    "Main course",
+    "Pancake",
+    "Preps",
+    "Preserve",
+    "Salad",
+    "Sandwiches",
+    "Side dish",
+    "Soup",
+    "Starter",
+    "Sweets"
+]
