@@ -1,0 +1,48 @@
+.image-30-icon1 {
+  height: 52px;
+  width: 97px;
+  object-fit: cover;
+}
+.fridge-vegjpg1,
+.image-30-icon1,
+.st-march-20241 {
+  position: relative;
+}
+.st-march-20241 {
+  width: 111px;
+  font-size: var(--font-size-sm);
+  display: inline-block;
+  box-sizing: border-box;
+  padding-right: var(--padding-xl);
+}
+.fridge-vegjpg-parent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 1px 0;
+}
+.image-30-group {
+  width: 237px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.image-32-icon {
+  height: 33.1px;
+  width: 30px;
+  position: relative;
+  object-fit: cover;
+}
+.frame-parent1 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  font-size: var(--font-size-xl);
+  color: var(--color-black);
+  font-family: var(--font-source-sans-pro);
+}

@@ -1,0 +1,85 @@
+.upload-your-pantry1 {
+  position: relative;
+  font-size: var(--font-size-17xl);
+  font-family: var(--font-source-sans-pro);
+  color: var(--color-black);
+  text-align: center;
+}
+.input-area {
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-base);
+  background-color: var(--color-darkslategray);
+  border-radius: var(--br-mini);
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  mix-blend-mode: normal;
+}
+.cloud-img-icon {
+  width: 130px;
+  height: 130px;
+  position: relative;
+  object-fit: cover;
+}
+.drag-and-drop1 {
+  font-size: var(--font-size-8xl);
+}
+.browse-picture1,
+.drag-and-drop1,
+.files-supported-jpg1,
+.or1 {
+  position: relative;
+}
+.browse-picture1 {
+  font-size: var(--font-size-17xl);
+  font-family: var(--font-source-sans-pro);
+  color: var(--color-black);
+  text-align: center;
+}
+.browse-button {
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-xl);
+  background-color: transparent;
+  width: 356px;
+  border-radius: var(--br-mini);
+  background: linear-gradient(#a3b0a3, #a3b0a3), #a3b0a3;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  mix-blend-mode: normal;
+}
+.maximum-size1 {
+  position: relative;
+}
+.camera-scan1,
+.frames-collection {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+.frames-collection {
+  border: 1px solid var(--color-black);
+  padding: var(--padding-8xl) var(--padding-smi);
+  gap: 23px 0;
+  text-align: center;
+  font-size: var(--font-size-5xl);
+  color: var(--color-black);
+  font-family: var(--font-source-sans-pro);
+}
+.camera-scan1 {
+  width: 100%;
+  position: relative;
+  background-color: var(--color-white);
+  padding: var(--padding-lgi) var(--padding-2xs) var(--padding-lgi) 12px;
+  box-sizing: border-box;
+  gap: 22px 0;
+}
