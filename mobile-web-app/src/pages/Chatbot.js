@@ -123,7 +123,9 @@ function Chatbot() {
   return (
     <div className="chat-container">
       <div className="chat-header">
-        <h2>BiteBalance Chat</h2>
+        <a className="chat-header" href='/home-page'>
+          <h2>BiteBalance Chat</h2>
+        </a>
       </div>
       <div className="chat-body">
         {messages.map(message => (
