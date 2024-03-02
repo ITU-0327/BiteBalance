@@ -1,0 +1,41 @@
+.image-22-icon {
+  height: 110px;
+  width: 110px;
+  position: relative;
+  border-radius: var(--br-mini);
+  object-fit: cover;
+}
+.hot-dog-sandwich,
+.mins2 {
+  margin: 0;
+}
+.mins2 {
+  font-size: var(--font-size-base);
+  color: var(--color-darkgray);
+}
+.hot-dog-sandwich-container {
+  position: relative;
+  text-decoration: underline;
+  font-weight: 700;
+  color: inherit;
+}
+.avocado-egg-toast-image,
+.fried-rice-frame1 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.avocado-egg-toast-image {
+  padding: 0 var(--padding-xl) 0 0;
+  gap: 0 10px;
+}
+.fried-rice-frame1 {
+  width: 399px;
+  padding: 0 0 var(--padding-sm) 0;
+  box-sizing: border-box;
+  text-align: left;
+  font-size: var(--font-size-5xl);
+  color: var(--color-black);
+  font-family: var(--font-source-sans-pro);
+}

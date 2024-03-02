@@ -41,7 +41,14 @@ const ShoppingList = () => {
           <input className="checkbox12" type="checkbox" />
         </div>
       </section>
-      <Link className="image-111" to="/home-page" />
+      <Link className="image-111" to="/home-page">
+        <img
+        className="image"
+        loading="lazy"
+        alt="Background"
+        src="/image-12@2x.png"
+        />
+      </Link>
     </div>
   );
 };

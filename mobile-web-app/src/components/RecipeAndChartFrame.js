@@ -25,7 +25,7 @@ const RecipeAndChartFrame = () => {
           </div>
         </div>
         <div className="shopping-list-frame2">
-          <a className="recipe-btn1">
+          <a className="recipe-btn1" href="/recipe">
             <img
               className="image-5-icon1"
               loading="lazy"

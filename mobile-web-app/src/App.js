@@ -12,6 +12,7 @@ import LoginPage from "./pages/LoginPage";
 import SettingsPage from "./pages/SettingsPage";
 import ShoppingList from "./pages/ShoppingList";
 import Chatbot from "./pages/Chatbot";
+import Recipie from "./pages/Recipie";
 
 function App() {
   const action = useNavigationType();
@@ -57,6 +58,10 @@ function App() {
         title = "";
         metaDescription = "";
         break;
+      case "/recipe":
+        title = "";
+        metaDescription = "";
+        break;
     }
 
     if (title) {
@@ -82,6 +87,7 @@ function App() {
       <Route path="/settings-page" element={<SettingsPage />} />
       <Route path="/shopping-list" element={<ShoppingList />} />
       <Route path="/chatbot" element={<Chatbot />} />
+      <Route path="/recipe" element={<Recipie />} />
     </Routes>
   );
 }

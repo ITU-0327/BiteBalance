@@ -1,0 +1,14 @@
+<svg width="42" height="35" viewBox="0 0 42 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+<line y1="3.5" x2="42" y2="3.5" stroke="black"/>
+<line y1="17.5" x2="42" y2="17.5" stroke="black"/>
+<line y1="31.5" x2="42" y2="31.5" stroke="black"/>
+<g opacity="0.9">
+<rect x="31" width="7" height="7" rx="3.5" fill="black"/>
+</g>
+<g opacity="0.9">
+<rect x="5" y="14" width="7" height="7" rx="3.5" fill="black"/>
+</g>
+<g opacity="0.9">
+<rect x="31" y="28" width="7" height="7" rx="3.5" fill="black"/>
+</g>
+</svg>

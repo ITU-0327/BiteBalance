@@ -1,0 +1,98 @@
+.fried-rice-frame {
+  align-self: stretch;
+  flex: 1;
+  background-color: var(--color-black);
+  overflow: hidden;
+}
+.empty-frame {
+  width: 401px;
+  height: 18px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 var(--padding-xs) var(--padding-mid) 0;
+  box-sizing: border-box;
+}
+.image-25-icon {
+  height: 111px;
+  width: 111px;
+  position: relative;
+  border-radius: var(--br-mini);
+  object-fit: cover;
+}
+.fried-rice,
+.mins {
+  margin: 0;
+}
+.mins {
+  font-size: var(--font-size-base);
+  color: var(--color-darkgray);
+}
+.fried-rice-15-container {
+  position: relative;
+  text-decoration: underline;
+  font-weight: 700;
+  color: inherit;
+}
+.time-input-field {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 0 10px;
+}
+.dish-name-and-time-fields {
+  align-self: stretch;
+  height: 1px;
+  border: 1px solid var(--color-black);
+  box-sizing: border-box;
+}
+.image-frames-stack,
+.image-frames-stack1 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.image-frames-stack1 {
+  flex: 1;
+  flex-direction: column;
+  padding: 0 var(--padding-12xs) 0 0;
+  gap: 10px 0;
+}
+.image-frames-stack {
+  align-self: stretch;
+  flex-direction: row;
+  padding: 0 var(--padding-4xs);
+  text-align: left;
+  font-size: var(--font-size-5xl);
+  color: var(--color-black);
+  font-family: var(--font-source-sans-pro);
+}
+.image-12 {
+  cursor: pointer;
+  text-decoration: none;
+  width: 88px;
+  height: 82px;
+  position: absolute;
+  margin: 0 !important;
+  right: 162px;
+  bottom: 20px;
+  background-image: url(/public/image-12@2x.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+.recipie {
+  width: 100%;
+  position: relative;
+  background-color: var(--color-white);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+  padding: 63px 0 119px var(--padding-sm);
+  box-sizing: border-box;
+  gap: 10px 0;
+}

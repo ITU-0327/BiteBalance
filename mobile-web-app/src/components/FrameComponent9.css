@@ -1,0 +1,50 @@
+.image-35,
+.search-recipes {
+  border: 0;
+  background-color: transparent;
+  position: relative;
+}
+.image-35 {
+  cursor: pointer;
+  padding: 0;
+  height: 21px;
+  width: 21px;
+  background-image: url(/public/image-35@3x.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+.search-recipes {
+  outline: 0;
+  display: inline-block;
+  font-family: var(--font-source-sans-pro);
+  font-size: var(--font-size-xl);
+  height: 25px;
+  flex: 1;
+  font-weight: 700;
+  color: var(--color-black);
+  text-align: left;
+  min-width: 186px;
+}
+.image-35-parent,
+.recipie-inner {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.image-35-parent {
+  flex: 1;
+  border-radius: var(--br-mini);
+  background: linear-gradient(#d9d9d9, #d9d9d9), #a3b0a3;
+  overflow: hidden;
+  align-items: flex-end;
+  padding: var(--padding-sm) var(--padding-base) var(--padding-mini)
+    var(--padding-lg);
+  gap: 0 11px;
+}
+.recipie-inner {
+  width: 401px;
+  align-items: flex-start;
+  padding: 0 var(--padding-6xl) var(--padding-smi) 0;
+  box-sizing: border-box;
+}

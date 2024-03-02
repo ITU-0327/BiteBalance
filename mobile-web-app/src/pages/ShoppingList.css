@@ -194,6 +194,13 @@
   background-position: top;
   z-index: 1;
 }
+.image {
+  cursor: pointer;
+  text-decoration: none;
+  width: 88px;
+  height: 82px;
+  position: center;
+}
 .shopping-list {
   width: 100%;
   position: relative;

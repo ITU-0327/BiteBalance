@@ -1,0 +1,62 @@
+.image-19-icon {
+  height: 110px;
+  width: 110px;
+  position: relative;
+  border-radius: var(--br-mini);
+  object-fit: cover;
+}
+.mapo-tofu,
+.mins1 {
+  margin: 0;
+}
+.mins1 {
+  font-size: var(--font-size-base);
+  color: var(--color-darkgray);
+}
+.mapo-tofu-40-container {
+  position: relative;
+  text-decoration: underline;
+  font-weight: 700;
+  color: inherit;
+}
+.low-calorie-breakfast-frame,
+.search-recipe-text {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.low-calorie-breakfast-frame {
+  gap: 0 10px;
+}
+.search-recipe-text {
+  padding: 0 var(--padding-3xs);
+}
+.frame-fried-rice {
+  align-self: stretch;
+  height: 1px;
+  background-color: var(--color-black);
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.recipie-inner1,
+.search-recipe-text-parent {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.search-recipe-text-parent {
+  flex: 1;
+  flex-direction: column;
+  gap: 16px 0;
+}
+.recipie-inner1 {
+  width: 402px;
+  flex-direction: row;
+  padding: 0 var(--padding-smi) var(--padding-mini) 0;
+  box-sizing: border-box;
+  text-align: left;
+  font-size: var(--font-size-5xl);
+  color: var(--color-black);
+  font-family: var(--font-source-sans-pro);
+}
