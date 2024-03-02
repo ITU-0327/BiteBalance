@@ -5,7 +5,8 @@ import {
   useNavigationType,
   useLocation,
 } from "react-router-dom";
-import CameraScan1 from "./pages/CameraScan1";
+import CameraScan1 from './pages/CameraScan1';
+import HomePage from "./pages/HomePage";
 
 function App() {
   const action = useNavigationType();
@@ -45,8 +46,9 @@ function App() {
 
   return (
     <Routes>
-      <Route path="/" element={<CameraScan1 />} />
-    </Routes>
+        <Route path="/" element={<HomePage />} /> // Your new home page
+        <Route path="/scan-your-pantry" element={<CameraScan1 />} /> // CameraScan1 page
+      </Routes>
   );
 }
 export default App;

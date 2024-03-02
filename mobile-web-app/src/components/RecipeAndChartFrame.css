@@ -1,0 +1,132 @@
+.image-4-icon1 {
+  position: absolute;
+  top: 25px;
+  left: 20px;
+  width: 61px;
+  height: 50px;
+  object-fit: cover;
+}
+.camera-btn1 {
+  cursor: pointer;
+  text-decoration: none;
+  width: 100px;
+  height: 100px;
+  border-radius: var(--br-71xl);
+  background-color: var(--color-gainsboro);
+}
+.camera-btn1,
+.camera1 {
+  position: relative;
+}
+.camera-text-frame {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 var(--padding-lg) 0 var(--padding-smi);
+}
+.camera-frame,
+.camera-text1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.camera-frame {
+  align-self: stretch;
+  align-items: center;
+  gap: 15px 0;
+}
+.camera-text1 {
+  flex: 1;
+  align-items: flex-start;
+  padding: var(--padding-11xs) 0 0;
+  box-sizing: border-box;
+  min-width: 75px;
+}
+.chart-btn-icon1 {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  border-radius: var(--br-71xl);
+  object-fit: cover;
+}
+.list1,
+.shopping1 {
+  margin: 0;
+}
+.shopping-list1 {
+  position: relative;
+}
+.chef-image,
+.shopping-list-frame1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.chef-image {
+  align-self: stretch;
+  align-items: center;
+  gap: 15px 0;
+}
+.shopping-list-frame1 {
+  flex: 1;
+  align-items: flex-start;
+  padding: var(--padding-11xs) 0 0;
+  box-sizing: border-box;
+  min-width: 75px;
+  text-align: center;
+}
+.image-5-icon1 {
+  position: absolute;
+  top: 20px;
+  left: 19px;
+  width: 61px;
+  height: 61px;
+  object-fit: cover;
+}
+.recipe-btn1 {
+  width: 100px;
+  height: 100px;
+  border-radius: var(--br-71xl);
+  background-color: var(--color-gainsboro);
+}
+.recipe-btn1,
+.recipes1 {
+  position: relative;
+}
+.shopping-list-frame2 {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 19px 0;
+  min-width: 75px;
+}
+.recipe-and-chart-frame,
+.recipe-button-frame {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+.recipe-button-frame {
+  flex: 1;
+  flex-wrap: wrap;
+  gap: 0 39px;
+}
+.recipe-and-chart-frame {
+  align-self: stretch;
+  padding: 0 var(--padding-mini) 0 0;
+  box-sizing: border-box;
+  text-align: left;
+  font-size: var(--font-size-xl);
+  color: var(--color-black);
+  font-family: var(--font-source-sans-pro);
+}
+@media screen and (max-width: 450px) {
+  .recipe-button-frame {
+    gap: 0 39px;
+  }
+}

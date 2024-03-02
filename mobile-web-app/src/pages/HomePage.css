@@ -1,0 +1,14 @@
+.home-page1 {
+  width: 100%;
+  position: relative;
+  background-color: var(--color-white);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: var(--padding-45xl) var(--padding-5xs) var(--padding-mini) 29px;
+  box-sizing: border-box;
+  gap: 31px 0;
+  letter-spacing: normal;
+}

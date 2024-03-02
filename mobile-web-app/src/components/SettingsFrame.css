@@ -1,0 +1,190 @@
+.recommended-for-you1 {
+  position: relative;
+}
+.top1 {
+  height: 19px;
+  width: 24px;
+  position: absolute;
+  margin: 0 !important;
+  right: 145px;
+  bottom: -11px;
+  font-size: var(--font-size-xl);
+  display: inline-block;
+  color: var(--color-white);
+  text-align: center;
+  z-index: 1;
+}
+.recommended-text1 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 var(--padding-xl) 0 0;
+  position: relative;
+}
+.image-26-icon1 {
+  height: 180px;
+  width: 121px;
+  position: relative;
+  border-radius: var(--br-mini);
+  object-fit: cover;
+  mix-blend-mode: normal;
+}
+.blank-line4,
+.p9 {
+  margin: 0;
+}
+.healthy3 {
+  font-family: var(--font-source-sans-pro);
+}
+.blank-line5,
+.healthy2,
+.meals-in-10-mins1 {
+  margin: 0;
+}
+.healthy-meals-in-container1 {
+  height: 175px;
+  width: 107px;
+  position: relative;
+  display: inline-block;
+  flex-shrink: 0;
+}
+.microwave1 {
+  flex: 1;
+  border-radius: var(--br-mini);
+  background-color: var(--color-darkgray);
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-3xs) var(--padding-sm) var(--padding-3xs)
+    var(--padding-3xs);
+  box-sizing: border-box;
+  gap: 0 10px;
+  mix-blend-mode: normal;
+  min-width: 260px;
+  min-height: 200px;
+  max-height: 200px;
+}
+.blank-line6,
+.blank-line7 {
+  margin: 0;
+}
+.tiktok-recipies1 {
+  font-family: var(--font-source-sans-pro);
+}
+.cheap-and-easy-tiktok-recipies1 {
+  margin: 0;
+}
+.cheap-and-easy-container3 {
+  width: 100%;
+}
+.cheap-and-easy-container2 {
+  width: 108px;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.cheap-and-easy-tiktok-recipes {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0;
+}
+.tiktok-recipes1 {
+  border-radius: var(--br-mini);
+  background-color: var(--color-darkgray);
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: var(--padding-3xs) 0 var(--padding-56xl) var(--padding-3xs);
+  box-sizing: border-box;
+  mix-blend-mode: normal;
+  min-width: 110px;
+  max-width: 110px;
+  min-height: 200px;
+  max-height: 200px;
+  font-size: var(--font-size-lg);
+}
+.micro-wave,
+.recommended-text-parent {
+  align-self: stretch;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.micro-wave {
+  flex-direction: row;
+  gap: 0 17px;
+  text-align: center;
+  font-size: var(--font-size-xl);
+}
+.recommended-text-parent {
+  flex-direction: column;
+  gap: 14px 0;
+}
+.image-7-icon1 {
+  width: 59px;
+  height: 59px;
+  position: relative;
+  object-fit: cover;
+}
+.chatbot1,
+.recommended-text-frame {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.chatbot1 {
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-3xs);
+  background-color: var(--color-darkgray);
+  height: 79px;
+  width: 79px;
+  border-radius: var(--br-31xl);
+  overflow: hidden;
+  flex-shrink: 0;
+  flex-direction: column;
+  box-sizing: border-box;
+  mix-blend-mode: normal;
+}
+.recommended-text-frame {
+  flex-direction: row;
+  padding: 0 var(--padding-10xs);
+}
+.chatbot-frame,
+.settings-frame {
+  display: flex;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+.chatbot-frame {
+  flex: 1;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 20px 0;
+}
+.settings-frame {
+  align-self: stretch;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0 0 0 var(--padding-9xs);
+  box-sizing: border-box;
+  text-align: left;
+  font-size: var(--font-size-9xl);
+  color: var(--color-black);
+  font-family: var(--font-source-sans-pro);
+}
+@media screen and (max-width: 450px) {
+  .tiktok-recipes1 {
+    width: 100%;
+  }
+  .micro-wave {
+    flex-wrap: wrap;
+  }
+}
