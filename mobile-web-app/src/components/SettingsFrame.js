@@ -50,9 +50,9 @@ const SettingsFrame = () => {
           </div>
         </div>
         <div className="recommended-text-frame">
-          <button className="chatbot1">
+          <a className="chatbot1" href="/scan-your-pantry">
             <img className="image-7-icon1" alt="" src="/image-7@2x.png" />
-          </button>
+          </a>
         </div>
       </div>
     </section>
