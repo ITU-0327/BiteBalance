@@ -33,57 +33,63 @@ function Chatbot() {
   // useEffect to send initial bot messages when the page loads
   useEffect(() => {
     const timeouts = [];
-    const delayMessage1 = setTimeout(() => {
-      sendBotMessage("I'm your go-to nutrition navigator, ready to help you balance your meals, discover delicious recipes, and organize your shopping lists with ease.", 0);
-    }, 500);
-    timeouts.push(delayMessage1);
+    // Initial bot messages
+    sendBotMessage("I'm your go-to nutrition navigator, ready to help you balance your meals, discover delicious recipes, and organize your shopping lists with ease.", 500);
+    sendBotMessage("What’s on your menu today? Share your cravings or a photo of your pantry, and let's create something tasty and healthy together!", 1500);
   
-    const delayMessage2 = setTimeout(() => {
-      sendBotMessage("What’s on your menu today? Share your cravings or a photo of your pantry, and let's create something tasty and healthy together!", 0);
-    }, 1500);
-    timeouts.push(delayMessage2);
+    // Handle URL parameter
+    const queryParams = new URLSearchParams(window.location.search);
+    const userMessage = queryParams.get('message');
+    if (userMessage) {
+      // Simulate typing the message after initial messages
+      setTimeout(() => {
+        setInputValue(userMessage); // Set the message as if typed
+        sendMessage(userMessage); // Directly send the message
+      }, 2000); // Ensure this happens after the bot messages
+    }
   
-    // Cleanup function
-    return () => {
-      timeouts.forEach(clearTimeout);
-    };
+    // Cleanup
+    return () => timeouts.forEach(clearTimeout);
   }, []);
 
 
   const azureFunctionUrl = 'https://bitebalance-chatbot.azurewebsites.net/api/chatbot_function';
 
-  const sendMessage = async () => {
-    if (!inputValue.trim()) return;
-
-    const userMessage = { 
-      id: Date.now(), 
-      text: inputValue, 
-      sender: 'user', 
+  const sendMessage = async (messageText = inputValue) => {
+    if (!messageText.trim()) return;
+  
+    // Create and add the user message to the state
+    const userMessage = {
+      id: Date.now(),
+      text: messageText, // Use the messageText argument
+      sender: 'user',
       timestamp: new Date().toLocaleTimeString(),
-      sources: [] // User messages do not have sources
+      sources: [] // Assuming no sources for user messages
     };
-    setMessages([...messages, userMessage]);
-    
-    setInputValue('');
-
-    setIsBotThinking(true); // Start loading animation
-
+    setMessages(prevMessages => [...prevMessages, userMessage]);
+  
+    setInputValue(''); // Clear the input field
+  
+    setIsBotThinking(true); // Optionally indicate the bot is "thinking"
+  
     try {
-      const response = await axios.post(azureFunctionUrl, { query: inputValue });
-      const botMessage = { 
-        id: Date.now(), 
+      // API call as before
+      const response = await axios.post(azureFunctionUrl, { query: messageText });
+      // Add the bot response to the chat
+      setMessages(prevMessages => [...prevMessages, {
+        id: Date.now(),
         text: response.data.text,
         sources: response.data.sources,
-        sender: 'bot', 
-        timestamp: new Date().toLocaleTimeString() 
-      };
-      setMessages(messages => [...messages, botMessage]);
+        sender: 'bot',
+        timestamp: new Date().toLocaleTimeString()
+      }]);
     } catch (error) {
       console.error('Error sending message:', error);
     } finally {
-      setIsBotThinking(false); // Stop loading animation
+      setIsBotThinking(false);
     }
   };
+  
 
   const renderMessageContent = (message) => {
     const withBoldQuotes = message.text.replace(/"([^"]*)"/g, '**"$1"**');

@@ -41,22 +41,24 @@ const CameraScan1 = () => {
           image: imageData.split('base64,')[1],
         });
         alert('Image uploaded successfully!');
-        console.log(response.data);
         setImageSelected(false); // Reset after upload
-        
-        // You could clear the uploadedFiles if you only want to show images that are not yet uploaded
-        // setUploadedFiles([]);
-        
+  
+        const apiResponseMessage = response.data.text;
+        if (apiResponseMessage) {
+          const encodedMessage = encodeURIComponent(apiResponseMessage);
+          window.location.href = `/chatbot?message=${encodedMessage}`;
+        }
+  
       } catch (error) {
         console.error('Error uploading image:', error);
         alert('Failed to upload image.');
-        // Remove the image from the uploadedFiles if the upload fails
-        setUploadedFiles(uploadedFiles.filter(file => file.src !== imageData));
+        // Optionally handle failed upload, e.g., removing the failed image
       }
     } else {
       alert('Please select an image first.');
     }
   };
+  
 
   const handleBrowseClick = () => {
     fileInputRef.current.click();
