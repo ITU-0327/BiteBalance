@@ -12,9 +12,9 @@ const MainFrame = () => {
                 <p className="tony1">Tony !</p>
               </b>
             </div>
-            <button className="settings1">
+            <a className="settings1" href="/settings-page">
               <img className="image-6-icon1" alt="" src="/image-6@2x.png" />
-            </button>
+            </a>
           </div>
         </div>
         <div className="frames-container">
