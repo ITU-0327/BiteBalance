@@ -53,9 +53,8 @@ function Chatbot() {
   }, []);
 
 
-  // const azureFunctionUrl = 'https://bitebalance-chatbot.azurewebsites.net/api/chatbot_function';
-  const azureFunctionUrl = 'http://localhost:7071/api/chatbot_function';
-  
+  const azureFunctionUrl = 'https://bitebalance-chatbot.azurewebsites.net/api/chatbot_function';
+
   const sendMessage = async (messageText = inputValue) => {
     if (!messageText.trim()) return;
   
