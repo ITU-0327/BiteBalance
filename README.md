@@ -82,7 +82,7 @@ Distributed under the MIT License. See [LICENSE](LICENSE) for more information.
   - [LinkedIn](https://www.linkedin.com/in/shuen-y%E2%80%99ng-tan-942b36198/)
 
 - **Yi Xin:** Key player in system architecture, data processing, and external data integration.
-  - [GitHub]()
+  - [GitHub](https://github.com/YiXin-Tan)
   - [LinkedIn]()
 
 Each team member played a crucial role in all project phases, showcasing a collaborative effort from planning to refinement.
