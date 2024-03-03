@@ -53,9 +53,11 @@ def main(req: func.HttpRequest) -> func.HttpResponse:
     try:
         req_body = req.get_json()
         user_input = req_body.get('query')
-        image_content = req_body.get('image')  # Assuming image is sent as a base64-encoded string.
+        chat_history = req_body.get('chatHistory', [])
+        image_content = req_body.get('image')
     except ValueError:
         user_input = req.params.get('query')
+        chat_history = []
         image_content = None
 
     input_language = None
@@ -98,8 +100,12 @@ def main(req: func.HttpRequest) -> func.HttpResponse:
 
 
         else:
-            # Get a response from OpenAI based on the user's query
-            response_text = generate_openai_response(user_input, openai_api_key, default_message)
+            instructions = "\n\nRespond without using 'bot:' or any other prefixes before the responses."
+            
+            chat_history_formatted = '\n'.join([f"{m['sender']}: {m['text']}" for m in chat_history])
+            prompt = f"{chat_history_formatted}\n\n{user_input}{instructions}"
+
+            response_text = generate_openai_response(prompt, openai_api_key, default_message)
 
     elif image_content:
         # Process the image to determine available food items.

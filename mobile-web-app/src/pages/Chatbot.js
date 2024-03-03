@@ -61,7 +61,7 @@ function Chatbot() {
     // Create and add the user message to the state
     const userMessage = {
       id: Date.now(),
-      text: messageText, // Use the messageText argument
+      text: messageText,
       sender: 'user',
       timestamp: new Date().toLocaleTimeString(),
       sources: [] // Assuming no sources for user messages
@@ -70,11 +70,15 @@ function Chatbot() {
   
     setInputValue(''); // Clear the input field
   
-    setIsBotThinking(true); // Optionally indicate the bot is "thinking"
+    setIsBotThinking(true);
   
+    const chatHistory = messages.map(m => ({ text: m.text, sender: m.sender }));
     try {
-      // API call as before
-      const response = await axios.post(azureFunctionUrl, { query: messageText });
+      const response = await axios.post(azureFunctionUrl, {
+        query: messageText,
+        chatHistory: chatHistory
+      });
+  
       // Add the bot response to the chat
       setMessages(prevMessages => [...prevMessages, {
         id: Date.now(),

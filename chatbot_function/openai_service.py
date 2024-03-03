@@ -3,6 +3,11 @@ import requests
 import logging
 
 
+system_message = """Please analyze the image and list all the food items and ingredients visible.
+ Provide details on the type of foods, quantities if apparent, 
+ and any other relevant observations that can help in meal planning or recipe suggestions."""
+
+
 def generate_openai_response(prompt_text: str, openai_api_key: str, system_message: str, model: str = 'gpt-3.5-turbo') -> str:
     """
     Args:
@@ -54,7 +59,7 @@ def process_image(base64_image: str, api_key: str):
           "content": [
             {
               "type": "text",
-              "text": "What’s in this image?"
+              "text": system_message
             },
             {
               "type": "image_url",
