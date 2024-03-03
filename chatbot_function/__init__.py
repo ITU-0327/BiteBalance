@@ -52,7 +52,7 @@ def main(req: func.HttpRequest) -> func.HttpResponse:
             inner_text = parsed_response["text"]
 
             # Access the "shopping_list" key directly
-            recipe_suggestion = inner_text["response_text"]
+            # recipe_suggestion = inner_text["response_text"]
             shopping_list = inner_text["shopping_list"]
 
             # print(recipe_suggestion)
@@ -61,10 +61,12 @@ def main(req: func.HttpRequest) -> func.HttpResponse:
             # print(shopping_list)
             #   ['tortillas', 'avocado', 'salsa']
 
-            response_text = []
+            shopping_list_links = []
             for shopping_item in shopping_list:
-                item_detilas = fetch_first_product_details(shopping_item)
-                response_text.append(item_detilas)
+                link = f"https://www.woolworths.com.au/shop/search/products?searchTerm={shopping_item.replace(' ', '%20')}"
+                shopping_list_links.append({'item': shopping_item, 'url': link})
+            
+            return func.HttpResponse(json.dumps({'shopping_list_links': shopping_list_links}), status_code=200, mimetype="application/json")
 
         else:
             instructions = "\n\nRespond without using 'bot:' or any other prefixes before the responses."

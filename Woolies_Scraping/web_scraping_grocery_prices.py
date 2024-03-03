@@ -65,8 +65,3 @@ def get_structured_message(response_type):
     return f"""Please respond with your {response_type} directly in a valid JSON format 
     (without using Markdown code blocks or any other formatting).
     The JSON schema should include: {json_schema[response_type]}"""
-
-
-if __name__ == '__main__':
-    prod_details = fetch_first_product_details('coke')
-    print(prod_details)

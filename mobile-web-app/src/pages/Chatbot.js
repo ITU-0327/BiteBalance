@@ -82,8 +82,9 @@ function Chatbot() {
       // Add the bot response to the chat
       setMessages(prevMessages => [...prevMessages, {
         id: Date.now(),
-        text: response.data.text,
-        sources: response.data.sources,
+        text: response.data.text || '', // Use an empty string as a fallback
+        sources: response.data.sources || [],
+        shopping_list_links: response.data.shopping_list_links || [],
         sender: 'bot',
         timestamp: new Date().toLocaleTimeString()
       }]);
@@ -97,37 +98,45 @@ function Chatbot() {
 
   const renderMessageContent = (message) => {
     const withBoldQuotes = message.text.replace(/"([^"]*)"/g, '**"$1"**');
-
     const rawMarkup = marked.parse(withBoldQuotes);
     const sanitizedMarkup = DOMPurify.sanitize(rawMarkup);
-
+  
     const senderName = message.sender === 'user' ? 'You' : 'BiteBalance';
   
+    const shoppingListLinksRender = message.shopping_list_links && message.shopping_list_links.length > 0 && (
+      <div className="message-shopping-list">
+        <div className="shopping-list-title">Shopping List:</div>
+        <ul className="shopping-list-items">
+          {message.shopping_list_links.map((item, index) => (
+            <li key={index} className="shopping-list-item">
+              <a href={item.url} target="_blank" rel="noopener noreferrer">{item.item}</a>
+            </li>
+          ))}
+        </ul>
+      </div>
+    );
+  
     return (
-      <div>
-        {/* Display sender's name */}
+      <div className="message">
         <div className="message-sender">{senderName}</div>
-
-        {/* Render the message as HTML */}
         <div className="message-content" dangerouslySetInnerHTML={{ __html: sanitizedMarkup }}></div>
-
-        {/* Render sources if they exist */}
         {message.sources && message.sources.length > 0 && (
           <div className="message-sources">
             Sources:&nbsp;
             {message.sources.map((source, index) => (
-              <span key={index}>
+              <span key={index} className="message-source-item">
                 <a href={source.url} target="_blank" rel="noopener noreferrer">
-                  {source.title || source.url}  {/* Fallback to URL if title is not available */}
+                  {source.title || source.url}
                 </a>
-                {index < message.sources.length - 1 ? ' ' : ''}
+                {index < message.sources.length - 1 ? ', ' : ''}
               </span>
             ))}
           </div>
         )}
+        {shoppingListLinksRender}
       </div>
     );
-  };
+  };  
 
 
   return (
